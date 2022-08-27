@@ -3,7 +3,7 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const menuHambIcon = document.querySelector('.menu');
 const mobilMenu = document.querySelector('.mobil-menu');
 const carritoCompras = document.querySelector('.navbar-shoppingcart');
-const carroCompras = document.querySelector('.my-order');
+const carroCompras = document.querySelector('.assideShoppingCart');
 const cardsContainer = document.querySelector('.cards-container');
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
@@ -13,7 +13,8 @@ carritoCompras.addEventListener('click', toggleCarroCompras);
 function toggleDesktopMenu() {
     carroCompras.classList.add('innactive');
     desktopMenu.classList.toggle('innactive');
-};
+}; 
+
 
 function toggleMobilMenu() {
     carroCompras.classList.add('innactive');
@@ -51,7 +52,7 @@ productList.push({
 for (product of productList) {
     const productCard = document.createElement('div');
     productCard.classList.add('product-card');
-    
+
     const productImg = document.createElement('img');
     productImg.setAttribute('src', product.image);
 
@@ -87,7 +88,6 @@ for (product of productList) {
 
     cardsContainer.appendChild(productCard);
 
-   
 
 
 
@@ -95,4 +95,5 @@ for (product of productList) {
 
 
 
-}
+
+} 
